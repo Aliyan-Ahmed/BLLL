@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <style>
+            input.ng-pristine{background-color:aquamarine;}
+            input.ng-touched.ng-invalid{background-color:brown;}
+            input.ng-touched.ng-valid{background-color:burlywood;}
+        </style>
+</head>
+
+<body ng-app="">
+    <form name="myForm">
+    <label>name:</label>
+    <input type="text" name="myName" ng-model="myName" ng-required="true"><br>
+    <label>subject:</label>
+    <input type="text" name="mysubject" ng-model="mySubject" ng-required="true"><br>
+    <label>Email</label>
+    <input type="email" name="myEmail" ng-model="myEmail" ng-required="true">
+</form>
+</body>
+</html>

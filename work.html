@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>practice</title>
+</head>
+<body ng-app="">
+    <div ng-init="hello=['saiem','hammad','ushah','areeb']">
+        <ol>
+            <li ng-repeat="l in hello">{{l}}</li>
+        </ol>
+    </div>
+    <input type="text" ng-model="fname">
+    <input type="text" ng-model="sname">
+    <p>hello {{fname+" "+sname}}</p>
+
+    <input type="number" ng-model="fnum">
+    <input type="number" ng-model="snum">
+    <p>addition     {{ fnum +" + " + snum+" = "+(fnum+snum)}}</p>
+</body>
+</html>
